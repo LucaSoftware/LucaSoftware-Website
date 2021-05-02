@@ -1,0 +1,53 @@
+
+.navbar-brand{
+    margin-left: 3%;
+    
+}
+.collapse {
+    margin-right: 3%;
+    float: right;
+}
+.nav-link {
+    
+    float: right;
+  
+}
+/*--Banner--*/
+.banner{
+    border: none;
+    position: relative;
+    min-height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    
+
+    background-size: cover;
+    /*background-color: #eaedff;*/
+    padding: 250px 0 200px;
+    .custom-shape-divider-bottom-1619974360 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        border: none;
+    }
+
+    .custom-shape-divider-bottom-1619974360 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 117px;
+    }
+
+    .custom-shape-divider-bottom-1619974360 .shape-fill {
+        fill: #FFFFFF;
+        border: 0;
+    }
+}
