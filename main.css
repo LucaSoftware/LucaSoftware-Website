@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .navbar-brand {
   margin-left: 3%;
 }
@@ -18,10 +22,7 @@
   min-height: 95vh;
   background-size: cover;
   background-position: center;
-  background: #0062ff;
-  background: -webkit-gradient(linear, left top, right top, from(#0062ff), to(#61efff));
-  background: linear-gradient(90deg, #0062ff 0%, #61efff 100%);
-  background: -webkit-linear-gradient(90deg, #0062ff 0%, #61efff 100%);
+  background: linear-gradient(94.15deg, #8094FC 0%, #71A8FF 47.92%, #60BDF7 100%);
   background-size: cover;
   /*background-color: #eaedff;*/
   padding: 250px 0 200px;
@@ -54,5 +55,68 @@
 /*--About Me Section--*/
 .about-me {
   margin-top: 25vh;
+}
+
+/*Projects Section*/
+.projects {
+  margin-top: 40vh;
+  margin-bottom: 2vh;
+  background-color: #e2e5f8;
+  padding-bottom: 30vh;
+  width: 100%;
+}
+
+.projects .custom-shape-divider-top-1620215503 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.projects .custom-shape-divider-top-1620215503 svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 99px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.projects .custom-shape-divider-top-1620215503 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.projects .row {
+  padding-top: 40vh;
+}
+
+.projects .custom-shape-divider-top-1620215692 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.projects .custom-shape-divider-top-1620215692 svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 89px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.projects .custom-shape-divider-top-1620215692 .shape-fill {
+  fill: #E2E5F8;
+}
+
+/*Contact Me Section*/
+.contact-me {
+  margin-top: 50vh;
 }
 /*# sourceMappingURL=main.css.map */
