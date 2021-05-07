@@ -1,84 +1,69 @@
+/*--Animations--*/
 
-body{
-    background-color: rgba(255,255,255,0);
-
+@keyframes openanimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.navbar-brand{
+body {
+    background-color: rgba(255, 255, 255, 0);
+    animation: openanimation 1s ease forwards;
+}
+
+.navbar-brand {
     margin-left: 3%;
-    
 }
+
 .collapse {
     margin-right: 3%;
     float: right;
 }
+
 .nav-link {
-    
     float: right;
-  
 }
+
+
 /*--Banner--*/
-.banner{
+
+.banner {
     border: none;
     position: relative;
-    min-height: 95vh;
+    min-height: 75vh;
     background-size: cover;
     background-position: center;
-    background: linear-gradient(
-94.15deg
-, #8094FC 0%, #71A8FF 47.92%, #60BDF7 100%);    
-
+    background: linear-gradient( 94.15deg, #8094FC 0%, #71A8FF 47.92%, #60BDF7 100%);
     background-size: cover;
     /*background-color: #eaedff;*/
     padding: 250px 0 200px;
-    .custom-shape-divider-bottom-1619974360 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-        border: none;
-    }
-
-    .custom-shape-divider-bottom-1619974360 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 117px;
-    }
-
-    .custom-shape-divider-bottom-1619974360 .shape-fill {
-        fill: #FFFFFF;
-        border: 0;
-    }
 }
 
+
 /*--About Me Section--*/
-.about-me{
+
+.about-me {
     margin-top: 25vh;
 }
 
 
-
 /*Projects Section*/
-.projects{
-    
+
+.projects {
     margin-top: 40vh;
-    margin-bottom: 2vh;
-    background-color: #e2e5f8; 
+    background-color: #e2e5f8;
     padding-bottom: 30vh;
     width: 100%;
     .custom-shape-divider-top-1620215503 {
         position: absolute;
-        
         left: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
     }
-    
     .custom-shape-divider-top-1620215503 svg {
         position: relative;
         display: block;
@@ -86,37 +71,37 @@ body{
         height: 99px;
         transform: rotateY(180deg);
     }
-    
     .custom-shape-divider-top-1620215503 .shape-fill {
         fill: #FFFFFF;
     }
-    .row{
+    .row {
         padding-top: 40vh;
     }
-
-    .custom-shape-divider-top-1620215692 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-    
-    .custom-shape-divider-top-1620215692 svg {
-        position: relative;
-        display: block;
-        width: calc(126% + 1.3px);
-        height: 89px;
-        transform: rotateY(180deg);
-    }
-    
-    .custom-shape-divider-top-1620215692 .shape-fill {
-        fill: #E2E5F8;
-    }
 }
+
+.custom-shape-divider-top-1620215692 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1620215692 svg {
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 89px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1620215692 .shape-fill {
+    fill: #E2E5F8;
+}
+
+
 /*Contact Me Section*/
-.contact-me{
+
+.contact-me {
     margin-top: 50vh;
 }
