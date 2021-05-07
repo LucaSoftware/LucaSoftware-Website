@@ -1,3 +1,3 @@
-# SF-Website
+# LP-Website
 
-Website for SurveyFlow project
+Website for @Luke_Screwdriver
