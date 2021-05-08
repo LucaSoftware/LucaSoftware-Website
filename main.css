@@ -16,12 +16,34 @@
   }
 }
 
+* {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 body {
   background-color: rgba(255, 255, 255, 0);
   -webkit-animation: openanimation 1s ease forwards;
           animation: openanimation 1s ease forwards;
 }
 
+/*--Scrollbar--*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #252424;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f80d1;
+}
+
+/*--NavBar--*/
 .navbar-brand {
   margin-left: 3%;
 }
@@ -111,5 +133,34 @@ body {
 /*Contact Me Section*/
 .contact-me {
   margin-top: 50vh;
+  margin-bottom: 50vh;
+}
+
+.contact-me .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.contact-me .card {
+  background-color: #e2e5f8;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.contact-me .container {
+  position: relative;
+  -webkit-clip-path: polygon(0, 0, 100% 0, 100% 85%, 0 100);
+          clip-path: polygon(0, 0, 100% 0, 100% 85%, 0 100);
+}
+
+.contact-me img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
 }
 /*# sourceMappingURL=main.css.map */

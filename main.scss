@@ -9,10 +9,36 @@
     }
 }
 
+* {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 body {
     background-color: rgba(255, 255, 255, 0);
     animation: openanimation 1s ease forwards;
 }
+
+
+/*--Scrollbar--*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(37, 36, 36);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2f80d1;
+}
+
+
+/*--NavBar--*/
 
 .navbar-brand {
     margin-left: 3%;
@@ -104,4 +130,25 @@ body {
 
 .contact-me {
     margin-top: 50vh;
+    margin-bottom: 50vh;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        padding: 20px;
+        grid-gap: 40px;
+    }
+    .card {
+        background-color: #e2e5f8;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    }
+    .container {
+        position: relative;
+        clip-path: polygon(0, 0, 100% 0, 100% 85%, 0 100);
+    }
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
 }
