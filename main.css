@@ -146,10 +146,10 @@ body {
 }
 
 .contact-me .card {
-  background-color: #e2e5f8;
+  background-color: #E2E5F8;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-me .container {
@@ -162,5 +162,35 @@ body {
   width: 100%;
   display: block;
   border-radius: 20px 20px 0 0;
+}
+
+.contact-me .container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+
+.contact-me .details {
+  padding: 20px 10px;
+}
+
+.contact-me .details h3 {
+  color: #0f0f0f;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+.contact-me .details p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1a1a1a;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
