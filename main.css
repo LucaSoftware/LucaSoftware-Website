@@ -137,60 +137,70 @@ body {
 }
 
 .contact-me .cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 20px;
-  grid-gap: 40px;
+  margin-top: 5vh;
 }
 
-.contact-me .card {
-  background-color: #E2E5F8;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+.contact-me .card,
+.contact-me .contact {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
 }
 
-.contact-me .container {
-  position: relative;
-  -webkit-clip-path: polygon(0, 0, 100% 0, 100% 85%, 0 100);
-          clip-path: polygon(0, 0, 100% 0, 100% 85%, 0 100);
+.contact-me .card:hover,
+.contact-me .card:focus,
+.contact-me .contact:hover,
+.contact-me .contact:focus {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.contact-me img {
-  width: 100%;
-  display: block;
-  border-radius: 20px 20px 0 0;
+.contact-me .card-deck {
+  margin-bottom: 50px;
 }
 
-.contact-me .container:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 20px 20px 0 0;
-  opacity: 0.7;
+.contact-me .scroll-header {
+  background: #fff;
+  -webkit-box-shadow: 0 3px 7px rgba(128, 128, 128, 0.3);
+  box-shadow: 0 3px 7px rgba(128, 128, 128, 0.3);
 }
 
-.contact-me .details {
-  padding: 20px 10px;
+.contact-me .contact {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-.contact-me .details h3 {
-  color: #0f0f0f;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 10px 0 15px 0;
+.contact-me .contact h4 {
+  margin-bottom: 20px;
 }
 
-.contact-me .details p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #1a1a1a;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 400;
+.contact-me .contact p {
+  margin: 40px;
+  margin-top: 20px;
+}
+
+.contact-me .contact,
+.contact-me .text-column {
+  margin-bottom: 25px;
+}
+
+.contact-me .contact img,
+.contact-me .text-column img {
+  height: 60px;
+  margin-bottom: 30px;
+  width: 60px;
+}
+
+.contact-me .invisible-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-me .invisible-link:hover {
+  color: inherit;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
