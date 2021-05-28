@@ -70,6 +70,53 @@ body {
   padding: 250px 0 200px;
 }
 
+.banner p {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  -webkit-animation: typing 5s steps(22, end) forwards, blink 1s infinite;
+          animation: typing 5s steps(22, end) forwards, blink 1s infinite;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid white;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid white;
+  }
+}
+
 /*--About Me Section--*/
 .about-me {
   margin-top: 25vh;
