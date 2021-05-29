@@ -16,10 +16,6 @@
   }
 }
 
-* {
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
 body {
   background-color: rgba(255, 255, 255, 0);
   -webkit-animation: openanimation 1s ease forwards;
@@ -64,17 +60,36 @@ body {
   min-height: 75vh;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(94.15deg, #8094FC 0%, #71A8FF 47.92%, #60BDF7 100%);
   background-size: cover;
+  background-color: #242424;
   /*background-color: #eaedff;*/
   padding: 250px 0 200px;
+}
+
+.banner button {
+  margin-top: 20px;
+  background-color: var(--color-mktg-btn-bg-bottom);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-mktg-btn-bg-top)), to(var(--color-mktg-btn-bg-bottom)));
+  background-image: linear-gradient(-180deg, var(--color-mktg-btn-bg-top), var(--color-mktg-btn-bg-bottom));
+}
+
+.banner h1 {
+  font-family: Alliance No\.1, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  -webkit-font-feature-settings: "ss02" on, "ss01" on;
+          font-feature-settings: "ss02" on, "ss01" on;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
 }
 
 .banner p {
   margin: 0px;
   white-space: nowrap;
   overflow: hidden;
-  font-family: monospace;
+  font-family: Alliance No\.1, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  -webkit-font-feature-settings: "ss02" on, "ss01" on;
+          font-feature-settings: "ss02" on, "ss01" on;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
   -webkit-animation: typing 5s steps(22, end) forwards, blink 1s infinite;
           animation: typing 5s steps(22, end) forwards, blink 1s infinite;
 }
