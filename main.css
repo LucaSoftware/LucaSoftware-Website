@@ -63,7 +63,7 @@ img {
 .banner {
   border: none;
   position: relative;
-  max-height: 95vh;
+  min-height: 95vh;
   background-size: cover;
   background-position: center;
   background-size: cover;
@@ -99,7 +99,11 @@ img {
   text-decoration: none;
 }
 
-.banner h1 {
+.banner .content {
+  margin-top: 20vh;
+}
+
+.banner .content h1 {
   font-size: 80px;
   color: white;
   font-family: Alliance No\.1, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -108,7 +112,7 @@ img {
   font-weight: 600 !important;
 }
 
-.banner p {
+.banner .content p {
   color: white;
   margin: 0px;
   white-space: nowrap;
