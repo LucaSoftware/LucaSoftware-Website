@@ -1,3 +1,8 @@
+/*Noto Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /*--Animations--*/
 
 @keyframes openanimation {
@@ -17,10 +22,7 @@ body {
 img {
     max-width: 550px;
     filter: drop-shadow(9px 0px 129px rgba(8, 113, 224, 0.25));
-    -moz-user-select: none;
     -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 
@@ -46,7 +48,7 @@ img {
 /*--NavBar--*/
 
 .navbar {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.20);
 }
 
 .navbar-brand {
@@ -72,8 +74,7 @@ img {
     background-position: center;
     background-size: cover;
     background: linear-gradient(108.17deg, #DDE0FF -12.9%, #FDFFFF 164.11%);
-    /*background-color: #eaedff;*/
-    padding: 250px 0 200px;
+    padding: 50px;
     .btn-banner {
         background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
         margin: 1em 0 0;
@@ -91,79 +92,43 @@ img {
     }
     .btn-banner:hover {
         background-position: right center;
-        /* change the direction of the change here */
         color: #fff;
         text-decoration: none;
     }
     .content {
-        margin-top: 10vh;
+        img{
+            margin-top: 5vh;
+            max-width: 500px;
+        }
+        @media only screen and (max-width: 770px){
+            box-sizing: initial!important;
+        }
         h1 {
+            margin-top: 15vh;
             font-size: 80px;
-            color: rgb(10, 10, 10);
-            font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-            font-feature-settings: "ss02" on, "ss01" on;
-            font-weight: 650;
+            color: rgb(36, 35, 35);
+            text-shadow: 0px 4px 30px rgba(171, 203, 238, 0.15);
+            font-family: 'Noto Sans JP', sans-serif;            font-feature-settings: "ss02" on, "ss01" on;
+            font-weight: 580;
         }
-        .output {
-            text-align: center;
-            font-family: 'Source Code Pro', monospace;
-            color: white;
-            h1 {
-                font-size: 30px;
-            }
+        p{
+            font-size: 18px;
+            text-shadow: 0px 4px 30px rgba(171, 203, 238, 0.15);
+            color: rgb(42, 41, 41);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 580;
+
         }
-        /* Cursor Styling */
-        .cursor::after {
-            content: '';
-            display: inline-block;
-            margin-left: 3px;
-            background-color: white;
-            animation-name: blink;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
+        i{
+            color: black;
+            font-size: 20px;
+            text-shadow: 0px 4px 30px rgba(171, 203, 238, 0.15);
+            margin-right: 5px;
         }
-        h1.cursor::after {
-            height: 24px;
-            width: 13px;
+        i:hover{
+            color: gray;
         }
-        p.cursor::after {
-            height: 13px;
-            width: 6px;
-        }
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            49% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-    }
-    /* The typing effect */
-    @keyframes typing {
-        from {
-            width: 0
-        }
-        to {
-            width: 100%
-        }
-    }
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-        from,
-        to {
-            border-color: transparent
-        }
-        50% {
-            border-color: orange;
-        }
-    }
+    }       
 }
 
 
