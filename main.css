@@ -22,8 +22,8 @@
 
 body {
   background-color: rgba(255, 255, 255, 0);
-  -webkit-animation: openanimation 1s ease forwards;
-          animation: openanimation 1s ease forwards;
+  -webkit-animation: openanimation 0.5s ease forwards;
+          animation: openanimation 0.5s ease forwards;
 }
 
 img {
@@ -43,11 +43,11 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4776E6;
+  background: #aaa9a9;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #396be0;
+  background: gray;
 }
 
 /*--NavBar--*/
@@ -78,6 +78,8 @@ img {
   background-size: cover;
   background: linear-gradient(108.17deg, #DDE0FF -12.9%, #FDFFFF 164.11%);
   padding: 50px;
+  -webkit-box-shadow: 0px 4px 20px rgba(182, 159, 231, 0.1);
+          box-shadow: 0px 4px 20px rgba(182, 159, 231, 0.1);
 }
 
 .banner .btn-banner {
@@ -148,18 +150,39 @@ img {
 
 /*--About Me Section--*/
 .about-me {
-  margin-top: 25vh;
+  margin-top: 20vh;
+}
+
+.about-me h1 {
+  margin-top: 15vh;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 60px;
+  text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  font-weight: 550;
+}
+
+.about-me p {
+  font-size: 20px;
+  text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-me img {
+  max-width: 350px;
+  -webkit-filter: drop-shadow(9px 0px 129px rgba(8, 113, 224, 0.3));
+          filter: drop-shadow(9px 0px 129px rgba(8, 113, 224, 0.3));
 }
 
 /*Projects Section*/
 .projects {
-  margin-top: 40vh;
-  background-color: #abcbee;
-  padding-bottom: 30vh;
+  margin-top: 20vh;
+  background: linear-gradient(108.17deg, #DDE0FF -12.9%, #FDFFFF 164.11%);
   width: 100%;
+  /*Top divider*/
+  /*Content*/
+  /*Bottom divider*/
 }
 
-.projects .custom-shape-divider-top-1620215503 {
+.projects .custom-shape-divider-top-1622966647 {
   position: absolute;
   left: 0;
   width: 100%;
@@ -167,25 +190,36 @@ img {
   line-height: 0;
 }
 
-.projects .custom-shape-divider-top-1620215503 svg {
+.projects .custom-shape-divider-top-1622966647 svg {
   position: relative;
   display: block;
-  width: calc(132% + 1.3px);
-  height: 99px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  width: calc(100% + 1.3px);
+  height: 25px;
 }
 
-.projects .custom-shape-divider-top-1620215503 .shape-fill {
+.projects .custom-shape-divider-top-1622966647 .shape-fill {
   fill: #FFFFFF;
 }
 
-.projects .row {
-  padding-top: 40vh;
+.projects h1 {
+  margin-top: 25vh;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 50px;
+  font-weight: 540;
 }
 
-.custom-shape-divider-top-1620215692 {
-  position: absolute;
+.projects p {
+  margin-bottom: 25vh;
+}
+
+.projects img {
+  max-width: 350px;
+  -webkit-filter: drop-shadow(9px 0px 129px rgba(8, 113, 224, 0.3));
+          filter: drop-shadow(9px 0px 129px rgba(8, 113, 224, 0.3));
+}
+
+.projects .custom-shape-divider-bottom-1622966774 {
+  margin-bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -194,16 +228,15 @@ img {
           transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1620215692 svg {
+.projects .custom-shape-divider-bottom-1622966774 svg {
+  position: relative;
   display: block;
-  width: calc(126% + 1.3px);
-  height: 89px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  width: calc(100% + 1.3px);
+  height: 25px;
 }
 
-.custom-shape-divider-top-1620215692 .shape-fill {
-  fill: #abcbee;
+.projects .custom-shape-divider-bottom-1622966774 .shape-fill {
+  fill: #FFFFFF;
 }
 
 /*Contact Me Section*/
