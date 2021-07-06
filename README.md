@@ -1,3 +1,2 @@
-# LP-Website
 
-Website for @Luke_Screwdriver
+Website for @LucaSoftware organization.
